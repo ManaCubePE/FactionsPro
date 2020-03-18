@@ -2,7 +2,7 @@
 ## Example configurations for those who are struggling with it.
 MaxFactionNameLength: 15
 # The Faction Name Max Length a name can go up to. Default: 15
-MaxPlayersPerFaction: 50
+MaxPlayersPerFaction: 5
 # Max Players per faction. 50 by default.
 OnlyLeadersAndOfficersCanInvite: true
 # The only ranks who can invite other players, are Leaders and Officers. Default: true
@@ -10,11 +10,11 @@ OfficersCanClaim: false
 ## Officers can claim. Default: false.
 ClaimingEnabled: true
 # Enable claiming (/f claim.) Default: true - There are some bugs with it, so report bugs by opening an issue on GitHub.
-PlotSize: 16
+PlotSize: 20
 # Plot Size for Claiming. Make sure it ends up being an known number, or it can contain issues.
-PlayersNeededInFactionToClaimAPlot: 5
+PlayersNeededInFactionToClaimAPlot: 1
 PowerNeededToClaimAPlot: 1000
-PowerNeededToSetOrUpdateAHome: 250
+PowerNeededToSetOrUpdateAHome: 50
 # ADDED BACK - The power which is needed th set / update a home. Default: 250. Select 0 to disable.
 PowerGainedPerPlayerInFaction: 50
 # You gain power by inviting other players to your faction. Default: 50.
@@ -25,21 +25,21 @@ PowerGainedPerKillingAnEnemy: 10
 # You gain power by killing enemies / other players who aren't in your faction. Default: 10.
 MoneyGainedPerKillingAnEnemy: 20
 # You gain Money by killing enemies / other players who aren't in your faction. Default: 20.
-MoneyNeededToClaimAPlot: 50000
+MoneyNeededToClaimAPlot: 10000
 # NEW: You can enable this option to allow Claiming to cost Money. This is quite useful so you can make the Faction Values system more useful.
 # To disable this option, just put 0. Default: 50000
 PowerGainedPerAlly: 100
 The power which you'll gain per ally. Default: 100.
-MoneyGainedPerAlly: 50
+MoneyGainedPerAlly: 100
 # The Money which will be gained per ally. Default: 50.
-TheDefaultPowerEveryFactionStartsWith: 0
+TheDefaultPowerEveryFactionStartsWith: 10
 # The default faction power you'll have when creating a faction. Default: 0.
 EnableOverClaim: false
 # Currently not useable. 
-AllyLimitPerFaction: 7
+AllyLimitPerFaction: 3
 # limitations of allies per faction. Default: 7.
 ClaimWorlds:
-- world
+- wilderness
 # Claim worlds. Of where people can claim. The format is like that as stated above. You can add more worlds by doing this:
 # - world
 # - ender
@@ -57,7 +57,7 @@ FactionCreationBroadcastMessage: "The player named: §2%PLAYER% §ahas created a
 BroadcastFactionDisband: true
 # Currently in BETA, so it may not function very well.
 FactionDisbandBroadcast: "The Faction named %FACTION% was disbaned by %PLAYER%"
-defaultFactionBalance: 0
+defaultFactionBalance: 500
 # NEW: When creating a faction, how much Money should a faction have by default? Default: 0.
 MOTDTime: 30
 # NEW:  when setting a MOTD to your faction, they will have by default: 30 seconds untill it times out, and that you have to redo the command again.
@@ -73,7 +73,7 @@ TopSTR: "§5§lTop 10 BEST Factions"
 TopMoney: "§5§lTop 10 RICHEST Factions"
 # NEW: Customise /f top money list to your own.
 # Use § color code.
-pluginprefix: "§l§f[§bFactions§f] §r"
+pluginprefix: "§l§f[§ManaCube§f] §r"
 ## NEW
 # Faction Commands prefix
 spawnerPrices:
@@ -89,7 +89,7 @@ magma: 10000
 ghast: 10000
 blaze: 1500
 empty: 100
-ServerName: "VoidFactionsPE"
+ServerName: "ManaCubeE"
 ## NEW:
 ## The name of the help page you choose. By default, it will be VoidFactionsPE. But you can customise it to whatever you want.
 ## To use color codes, put § then the color. For example: §a would be green. You can add multiple colors to your help page name, by doing: §6Void§bFactions§cPE (As an example)
